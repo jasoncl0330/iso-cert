@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>认证服务 on ISO认证咨询中心</title>
+    <link>https://iso-cert.netlify.app/services/</link>
+    <description>Recent content in 认证服务 on ISO认证咨询中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://iso-cert.netlify.app/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ISO 9001 质量管理体系认证</title>
+      <link>https://iso-cert.netlify.app/services/iso9001/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://iso-cert.netlify.app/services/iso9001/</guid>
+      <description>服务简介 ISO 9001是全球最广泛采用的质量管理体系标准，适用于任何规模、任何行业的组织。通过ISO 9001认证，企业可以建立科学的质量管理体系</description>
+    </item>
+  </channel>
+</rss>

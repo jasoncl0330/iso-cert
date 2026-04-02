@@ -1,0 +1,48 @@
+# Decap CMS 配置 - Netlify Git Gateway (正确版本)
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "网站设置"
+    files:
+      - name: "homepage"
+        label: "首页设置"
+        file: "content/_index.md"
+        fields:
+          - { label: "页面标题", name: "title", widget: "string" }
+          - { label: "Banner主标题", name: "banner_title", widget: "string" }
+          - { label: "Banner副标题", name: "banner_subtitle", widget: "string" }
+          - { label: "Banner描述", name: "banner_desc", widget: "text" }
+          - { label: "数据1", name: "stat_1", widget: "string" }
+          - { label: "数据2", name: "stat_2", widget: "string" }
+          - { label: "数据3", name: "stat_3", widget: "string" }
+          - { label: "数据4", name: "stat_4", widget: "string" }
+
+  - name: "services"
+    label: "认证服务"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "服务名称", name: "title", widget: "string" }
+      - { label: "服务描述", name: "description", widget: "text" }
+      - { label: "图标", name: "icon", widget: "string", default: "📋" }
+      - { label: "服务价格", name: "price", widget: "string", default: "面议" }
+      - { label: "服务周期", name: "duration", widget: "string", default: "3-4个月" }
+      - { label: "适用行业", name: "industries", widget: "list", default: ["制造业", "服务业"] }
+      - { label: "服务详情", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "普通页面"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "页面标题", name: "title", widget: "string" }
+      - { label: "页面描述", name: "description", widget: "text", required: false }
+      - { label: "页面内容", name: "body", widget: "markdown" }
